@@ -1,0 +1,52 @@
+tea.server.host: 192.168.13.172
+spring:
+  profiles:
+    active: dev
+  redis:
+    lettuce:
+      pool:
+        max-wait: -1
+        min-idle: 0
+        max-idle: 1000
+        max-active: 200
+      shutdown-timeout: 100
+    host: ${tea.server.host}
+    port: 6379
+    password: redis
+    database: 0
+    timeout: 5000
+  rabbitmq:
+    host:  ${tea.server.host}
+    port: 5672
+    username: root
+    password: root
+    listener:
+      direct:
+        auto-startup: false
+      simple:
+        auto-startup: false
+  datasource:
+    ## 这里说明一下，sakila是我的数据库名称，你们根据你们的来
+    url: jdbc:mysql://127.0.0.1:3306/sakila?useUnicode=true&characterEncoding=UTF-8&useSSL=false&serverTimezone=Asia/Shanghai
+    username: root
+    password: root
+  servlet:
+    multipart:
+      enabled: true
+      max-file-size: 100MB
+      max-request-size: 100MB
+server:
+  port: 8080
+  tomcat:
+    uri-encoding: UTF-8
+logging:
+  level:
+    com.tea: debug
+  config: classpath:logback-spring.xml
+  customize:
+    path: /logback/logs
+#mybatis-plus:
+#  configuration:
+#    ##驼峰下划线之间的转换
+#    map-underscore-to-camel-case: true
+#    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
