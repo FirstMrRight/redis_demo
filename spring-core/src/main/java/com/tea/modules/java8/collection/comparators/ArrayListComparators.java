@@ -17,16 +17,16 @@ import java.util.Set;
 public class ArrayListComparators {
 
     public static void main(String[] args) {
-        ArrayList<Integer> sourceList = Lists.newArrayList(1, 1,2, 3, 4);
-        ArrayList<Integer> targetList = Lists.newArrayList(2, 2, 3,4, 5, 6);
+        ArrayList<Integer> sourceList = Lists.newArrayList(1, 2,3);
+        ArrayList<Integer> targetList = Lists.newArrayList(1,3,5);
         doWithGuava(sourceList, targetList);
         doOfMySelf(sourceList, targetList);
     }
 
     /**
-     * 使用Guava对比
-     * @param sourceList
-     * @param targetList
+     * 使用Guava对List求差集
+     * @param sourceList 对比源列表
+     * @param targetList 对比目标列表
      */
     private static void doWithGuava(ArrayList<Integer> sourceList, ArrayList<Integer> targetList) {
         HashSet<Integer> sourceSet = Sets.newHashSet(sourceList);

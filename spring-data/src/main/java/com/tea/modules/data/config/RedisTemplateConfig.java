@@ -104,6 +104,8 @@ public class RedisTemplateConfig {
         // 7.设置 value 的转化格式和 key 的转化格式
         template.setValueSerializer(jackson2JsonRedisSerializer);
         template.setKeySerializer(new StringRedisSerializer());
+        template.setHashKeySerializer(new StringRedisSerializer());
+        template.setHashValueSerializer(jackson2JsonRedisSerializer);
         template.afterPropertiesSet();
         template.setEnableTransactionSupport(false);
         return template;

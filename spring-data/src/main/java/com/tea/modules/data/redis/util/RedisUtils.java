@@ -9,6 +9,9 @@ import org.springframework.data.redis.core.StringRedisTemplate;
 import org.springframework.stereotype.Component;
 
 import javax.annotation.Resource;
+import java.util.Collection;
+import java.util.List;
+import java.util.Map;
 import java.util.concurrent.TimeUnit;
 import java.util.function.Supplier;
 
@@ -75,5 +78,13 @@ public class RedisUtils {
     public static String deserialized(byte[] value){
         String result = stringRedisTemplate.getStringSerializer().deserialize(value);
         return result;
+    }
+
+    public static List<Object> hMultiGet(String key, Collection<Object> fields) {
+        return stringRedisTemplate.opsForHash().multiGet(key, fields);
+    }
+
+    public static void putAll(String key, Map<String,Object> fieldsWithValue){
+        redisTemplate.opsForHash().putAll(key,fieldsWithValue);
     }
 }
