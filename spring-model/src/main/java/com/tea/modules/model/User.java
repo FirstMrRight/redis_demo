@@ -5,12 +5,13 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.util.Date;
 import java.util.List;
 
 @Data
 @Builder
 @AllArgsConstructor
-public class User {
+public class User extends BaseModel{
     private String userName;
     private String password;
     private int age;
@@ -22,14 +23,17 @@ public class User {
     {
         System.out.println("我是一个初始化时执行的方法，我比构造器的优先级要高");
     }
-    public User(){
+
+    public User() {
         System.out.println("一个User对象被创建出来了");
     }
+
     /**
      * 返回空集合，用于演示NPE
+     *
      * @return
      */
-    public static List<User> getNullInstances(){
+    public static List<User> getNullInstances() {
         return null;
     }
 }

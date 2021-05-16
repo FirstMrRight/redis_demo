@@ -1,10 +1,13 @@
 package com.tea.modules.json;
 
 import com.alibaba.fastjson.JSON;
+import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
 import com.tea.modules.model.Student;
 
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 
 /**
  * @author jaymin
@@ -17,12 +20,10 @@ public class FastJsonDemo {
         student.setName("李华");
         student.setBirthDay(new Date());
         String json = JSON.toJSONString(student);
-        System.out.println(json);
-
-        Integer integer = Integer.valueOf(20);
-        JSONObject jsonObject = new JSONObject();
-        jsonObject.put("number", integer);
-        String s = JSON.toJSONString(jsonObject);
-        System.out.println(s);
+        List<String> jsons = new ArrayList<>();
+        jsons.add(json);
+        jsons.add(json);
+        String s = jsons.toString();
+        List<Student> students = JSONArray.parseArray(s, Student.class);
     }
 }

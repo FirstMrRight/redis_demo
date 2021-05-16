@@ -43,7 +43,7 @@ public class Student implements Serializable, Comparable {
     /**
      * 性别
      */
-    private Boolean gender;
+    private Integer gender;
     /**
      * 学费
      */
