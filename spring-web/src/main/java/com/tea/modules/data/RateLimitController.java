@@ -1,7 +1,7 @@
 package com.tea.modules.data;
 
 import com.tea.modules.annotation.Log;
-import com.tea.modules.model.Student;
+import com.tea.modules.model.po.Student;
 import com.tea.modules.data.redis.core.limit.support.RateLimiter;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.*;

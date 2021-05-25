@@ -2,7 +2,7 @@ package com.tea.modules.data.redis.jedis;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.tea.modules.model.RedisMessage;
+import com.tea.modules.model.po.RedisMessage;
 import redis.clients.jedis.Jedis;
 
 import java.util.Date;

@@ -1,6 +1,6 @@
 package com.tea.fors;
 
-import com.tea.modules.model.Student;
+import com.tea.modules.model.po.Student;
 
 import java.util.ArrayList;
 import java.util.List;

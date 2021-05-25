@@ -1,10 +1,9 @@
 package com.tea.modules.java8.collection.sort;
 
 import com.google.common.collect.Lists;
-import com.tea.modules.model.Student;
+import com.tea.modules.model.po.Student;
 import com.tea.modules.util.JacksonUtils;
 
-import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;

@@ -1,6 +1,6 @@
 package com.tea.modules.java8.oop;
 
-import com.tea.modules.model.User;
+import com.tea.modules.model.po.User;
 
 /**
  * 理解面向对象思想-对象的构造器与初始化

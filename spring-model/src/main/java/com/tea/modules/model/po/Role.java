@@ -1,4 +1,4 @@
-package com.tea.modules.model;
+package com.tea.modules.model.po;
 
 public class Role {
     private String name;

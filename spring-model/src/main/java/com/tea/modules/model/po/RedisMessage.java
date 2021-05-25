@@ -1,4 +1,4 @@
-package com.tea.modules.model;
+package com.tea.modules.model.po;
 
 public class RedisMessage {
     private String id;

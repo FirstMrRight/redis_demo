@@ -1,6 +1,6 @@
 package com.tea.modules.java8.extend;
 
-import com.tea.modules.model.Children;
+import com.tea.modules.model.po.Children;
 
 /**
  * @author jaymin<br>

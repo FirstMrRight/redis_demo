@@ -4,7 +4,7 @@ import com.alibaba.excel.EasyExcel;
 import com.alibaba.excel.write.metadata.style.WriteCellStyle;
 import com.alibaba.excel.write.style.HorizontalCellStyleStrategy;
 import com.google.common.collect.Lists;
-import com.tea.modules.model.ExcelObject;
+import com.tea.modules.model.po.ExcelObject;
 import com.tea.modules.constant.Constants;
 import com.tea.modules.enums.ExceptionEnums;
 import com.tea.modules.exception.RestfulException;

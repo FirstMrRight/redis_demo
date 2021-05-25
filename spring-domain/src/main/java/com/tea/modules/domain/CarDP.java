@@ -1,6 +1,6 @@
 package com.tea.modules.domain;
 
-import com.tea.modules.model.Car;
+import com.tea.modules.model.po.Car;
 
 /**
  * com.tea.modules.domain

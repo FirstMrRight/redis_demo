@@ -1,9 +1,9 @@
 package com.tea.modules.java8.io.serialization;
 
 import com.alibaba.fastjson.JSON;
-import com.tea.modules.model.Car;
-import com.tea.modules.model.Engine;
-import com.tea.modules.model.Student;
+import com.tea.modules.model.po.Car;
+import com.tea.modules.model.po.Engine;
+import com.tea.modules.model.po.Student;
 import lombok.extern.slf4j.Slf4j;
 
 import java.io.*;

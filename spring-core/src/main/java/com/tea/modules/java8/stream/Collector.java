@@ -1,12 +1,11 @@
 package com.tea.modules.java8.stream;
 
 import com.alibaba.fastjson.JSON;
-import com.tea.modules.model.StudentForLambda;
+import com.tea.modules.model.po.StudentForLambda;
 
 import java.util.Arrays;
 import java.util.List;
 import java.util.Map;
-import java.util.function.Function;
 import java.util.stream.Collectors;
 
 /**

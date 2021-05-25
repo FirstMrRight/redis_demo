@@ -1,7 +1,7 @@
 package com.tea.modules.bean.validator;
 
 import com.tea.modules.exception.RestfulException;
-import com.tea.modules.model.Student;
+import com.tea.modules.model.po.Student;
 import org.springframework.stereotype.Component;
 import org.springframework.util.CollectionUtils;
 

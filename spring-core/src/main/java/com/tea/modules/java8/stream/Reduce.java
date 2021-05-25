@@ -1,6 +1,6 @@
 package com.tea.modules.java8.stream;
 
-import com.tea.modules.model.StudentForLambda;
+import com.tea.modules.model.po.StudentForLambda;
 
 import java.util.Arrays;
 import java.util.List;

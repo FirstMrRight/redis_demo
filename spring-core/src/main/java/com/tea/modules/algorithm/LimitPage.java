@@ -1,6 +1,6 @@
 package com.tea.modules.algorithm;
 
-import com.tea.modules.model.Page;
+import com.tea.modules.model.po.Page;
 
 public class LimitPage {
     static int totalCount = 60;

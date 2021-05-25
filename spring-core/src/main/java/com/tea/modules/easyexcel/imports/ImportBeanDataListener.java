@@ -5,7 +5,7 @@ import com.alibaba.excel.event.AnalysisEventListener;
 import com.alibaba.fastjson.JSON;
 import com.tea.modules.enums.ExceptionEnums;
 import com.tea.modules.exception.RestfulException;
-import com.tea.modules.model.ImportBean;
+import com.tea.modules.model.po.ImportBean;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

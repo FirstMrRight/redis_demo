@@ -1,7 +1,7 @@
 package com.tea.modules.easyexcel.imports;
 
 import com.alibaba.excel.EasyExcel;
-import com.tea.modules.model.ImportBean;
+import com.tea.modules.model.po.ImportBean;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;

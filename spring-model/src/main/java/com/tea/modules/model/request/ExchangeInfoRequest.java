@@ -1,4 +1,4 @@
-package com.tea.modules.model;
+package com.tea.modules.model.request;
 
 
 import lombok.Data;

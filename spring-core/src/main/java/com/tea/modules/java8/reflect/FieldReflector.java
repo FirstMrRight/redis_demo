@@ -1,6 +1,6 @@
 package com.tea.modules.java8.reflect;
 
-import com.tea.modules.model.ReflectBean;
+import com.tea.modules.model.po.ReflectBean;
 
 import java.lang.reflect.Constructor;
 import java.lang.reflect.Field;
@@ -17,7 +17,7 @@ import java.lang.reflect.InvocationTargetException;
 public class FieldReflector {
     public static void main(String[] args) throws ClassNotFoundException, NoSuchFieldException, NoSuchMethodException, IllegalAccessException, InvocationTargetException, InstantiationException {
         // 1. 获取Class对象
-        Class clazz = Class.forName("com.tea.modules.model.ReflectBean");
+        Class clazz = Class.forName("com.tea.modules.model.po.ReflectBean");
         // 2. 获取所有的公有字段
         System.out.println("******************Get All Public Fields***************************************************");
         Field[] fieldArray = clazz.getFields();

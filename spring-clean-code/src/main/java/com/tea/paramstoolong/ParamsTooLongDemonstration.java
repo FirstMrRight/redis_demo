@@ -1,6 +1,6 @@
 package com.tea.paramstoolong;
 
-import com.tea.modules.model.Student;
+import com.tea.modules.model.po.Student;
 
 import java.util.Collections;
 import java.util.Date;

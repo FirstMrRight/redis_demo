@@ -1,7 +1,7 @@
 package com.tea.returnobject;
 
 import com.alibaba.fastjson.JSONObject;
-import com.tea.modules.model.Student;
+import com.tea.modules.model.po.Student;
 
 import java.util.Collections;
 import java.util.List;

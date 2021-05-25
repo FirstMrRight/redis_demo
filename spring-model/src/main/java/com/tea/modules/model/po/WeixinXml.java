@@ -1,5 +1,6 @@
-package com.tea.modules.model;
+package com.tea.modules.model.po;
 
+import com.tea.modules.model.po.ScanCodeInfo;
 import com.thoughtworks.xstream.annotations.XStreamAlias;
 import lombok.AllArgsConstructor;
 import lombok.Builder;

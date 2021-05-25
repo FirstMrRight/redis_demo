@@ -1,4 +1,4 @@
-package com.tea.modules.model;
+package com.tea.modules.model.base;
 
 import com.tea.modules.enums.DeleteEnum;
 import lombok.Data;

@@ -1,4 +1,4 @@
-package com.tea.modules.model;
+package com.tea.modules.model.po;
 
 import com.alibaba.excel.annotation.ExcelProperty;
 import lombok.AllArgsConstructor;

@@ -3,7 +3,7 @@ package com.tea.modules.service.impl;
 import com.tea.modules.annotation.Log;
 import com.tea.modules.enums.ExceptionEnums;
 import com.tea.modules.exception.RestfulException;
-import com.tea.modules.model.User;
+import com.tea.modules.model.po.User;
 import com.tea.modules.service.UserService;
 import com.tea.modules.util.JacksonUtils;
 import lombok.extern.slf4j.Slf4j;

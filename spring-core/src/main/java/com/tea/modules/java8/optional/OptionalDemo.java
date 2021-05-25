@@ -1,7 +1,7 @@
 package com.tea.modules.java8.optional;
 
-import com.tea.modules.model.Car;
-import com.tea.modules.model.Student;
+import com.tea.modules.model.po.Car;
+import com.tea.modules.model.po.Student;
 
 import java.util.Objects;
 import java.util.Optional;

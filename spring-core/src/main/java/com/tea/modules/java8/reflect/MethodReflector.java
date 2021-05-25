@@ -1,6 +1,6 @@
 package com.tea.modules.java8.reflect;
 
-import com.tea.modules.model.ReflectBean;
+import com.tea.modules.model.po.ReflectBean;
 
 import java.lang.reflect.Constructor;
 import java.lang.reflect.InvocationTargetException;
@@ -16,7 +16,7 @@ import java.lang.reflect.Method;
 public class MethodReflector {
     public static void main(String[] args) throws ClassNotFoundException, NoSuchMethodException, IllegalAccessException, InvocationTargetException, InstantiationException {
         // 1. 获取Class对象
-        Class clazz = Class.forName("com.tea.modules.model.ReflectBean");
+        Class clazz = Class.forName("com.tea.modules.model.po.ReflectBean");
         // 2. 获取所有公有方法,获取到的methods是可以获取到父类的方法的，包括Object
         System.out.println("******************Get All Public Methods***************************************************");
         Method[] publicMethods = clazz.getMethods();

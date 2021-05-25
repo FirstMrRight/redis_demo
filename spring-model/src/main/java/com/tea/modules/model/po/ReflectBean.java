@@ -1,4 +1,4 @@
-package com.tea.modules.model;
+package com.tea.modules.model.po;
 
 /**
  * @author jaymin<br>

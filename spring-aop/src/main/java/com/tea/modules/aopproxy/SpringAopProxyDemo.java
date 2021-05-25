@@ -1,6 +1,6 @@
 package com.tea.modules.aopproxy;
 
-import com.tea.modules.model.SimplePojo;
+import com.tea.modules.model.po.SimplePojo;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.aop.AfterReturningAdvice;
 import org.springframework.aop.MethodBeforeAdvice;

@@ -1,6 +1,6 @@
 package com.tea.modules.aspect;
 
-import com.tea.modules.model.SimplePojo;
+import com.tea.modules.model.po.SimplePojo;
 import org.aopalliance.aop.Advice;
 import org.aopalliance.intercept.MethodInterceptor;
 import org.springframework.aop.Advisor;

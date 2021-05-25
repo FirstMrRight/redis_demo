@@ -1,4 +1,4 @@
-package com.tea.modules.model;
+package com.tea.modules.model.po;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -6,11 +6,10 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import java.io.Serializable;
-import java.math.BigDecimal;
 
 /**
  * com.tea.modules.model<br>
- * 汽车引擎
+ * 汽车，包含引擎和车胎<br>
  * @author xiejiemin
  * @create 2021/1/19
  */
@@ -18,13 +17,13 @@ import java.math.BigDecimal;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class Engine implements Serializable {
+public class Car implements Serializable {
     /**
-     * 引擎名称
+     * 汽车名称
      */
     private String name;
     /**
-     * 价格
+     * 引擎
      */
-    private BigDecimal price;
+    private Engine engine;
 }

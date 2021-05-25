@@ -2,7 +2,7 @@ package com.tea.repeat;
 
 
 import com.tea.modules.enums.DeleteEnum;
-import com.tea.modules.model.User;
+import com.tea.modules.model.po.User;
 
 import java.util.Date;
 

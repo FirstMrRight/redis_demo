@@ -1,6 +1,6 @@
 package com.tea.modules.java8.stream;
 
-import com.tea.modules.model.Student;
+import com.tea.modules.model.po.Student;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -11,7 +11,7 @@ import java.lang.reflect.InvocationTargetException;
 @SuppressWarnings("all")
 public class ConstructorReflector {
     public static void main(String[] args) throws ClassNotFoundException, NoSuchMethodException, IllegalAccessException, InvocationTargetException, InstantiationException {
-        Class clazz = Class.forName("com.tea.modules.model.ReflectBean");
+        Class clazz = Class.forName("com.tea.modules.model.po.ReflectBean");
         // 1. 获取所有的公有构造方法
         System.out.println("********************All Public Constructor Methods****************************************");
         Constructor[] allPublicConstructors = clazz.getConstructors();

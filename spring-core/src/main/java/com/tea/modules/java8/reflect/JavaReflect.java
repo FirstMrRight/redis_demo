@@ -1,6 +1,6 @@
 package com.tea.modules.java8.reflect;
 
-import com.tea.modules.model.Student;
+import com.tea.modules.model.po.Student;
 
 import java.lang.reflect.Field;
 import java.math.BigDecimal;

@@ -6,8 +6,8 @@ import com.thoughtworks.xstream.io.HierarchicalStreamWriter;
 import com.thoughtworks.xstream.io.xml.DomDriver;
 import com.thoughtworks.xstream.io.xml.PrettyPrintWriter;
 import com.thoughtworks.xstream.io.xml.XppDriver;
-import com.tea.modules.model.ScanCodeInfo;
-import com.tea.modules.model.WeixinXml;
+import com.tea.modules.model.po.ScanCodeInfo;
+import com.tea.modules.model.po.WeixinXml;
 
 import java.io.Writer;
 

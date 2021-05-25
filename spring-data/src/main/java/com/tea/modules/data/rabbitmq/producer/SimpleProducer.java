@@ -1,6 +1,6 @@
 package com.tea.modules.data.rabbitmq.producer;
 
-import com.tea.modules.model.Order;
+import com.tea.modules.model.po.Order;
 import com.tea.modules.data.rabbitmq.config.SimpleMQConfig;
 import org.springframework.amqp.rabbit.core.RabbitTemplate;
 import org.springframework.beans.factory.annotation.Autowired;

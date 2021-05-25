@@ -1,6 +1,6 @@
 package com.tea.modules.jvm;
 
-import com.tea.modules.model.Book;
+import com.tea.modules.model.po.Book;
 
 /**
  * com.tea.modules.jvm

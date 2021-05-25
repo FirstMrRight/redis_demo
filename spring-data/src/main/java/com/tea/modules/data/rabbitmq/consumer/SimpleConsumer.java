@@ -2,7 +2,7 @@ package com.tea.modules.data.rabbitmq.consumer;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.tea.modules.model.Order;
+import com.tea.modules.model.po.Order;
 import com.tea.modules.data.rabbitmq.config.SimpleMQConfig;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.amqp.rabbit.annotation.RabbitHandler;

@@ -1,7 +1,7 @@
 package com.tea.modules.java8.stream;
 
 import com.google.common.collect.Lists;
-import com.tea.modules.model.StudentForLambda;
+import com.tea.modules.model.po.StudentForLambda;
 import org.springframework.util.CollectionUtils;
 
 import java.util.ArrayList;

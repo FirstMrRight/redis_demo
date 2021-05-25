@@ -1,6 +1,6 @@
 package com.tea.modules.rabbit;
 
-import com.tea.modules.model.Order;
+import com.tea.modules.model.po.Order;
 import com.tea.modules.data.rabbitmq.producer.SimpleProducer;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.Test;

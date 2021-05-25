@@ -1,4 +1,4 @@
-package com.tea.modules.model;
+package com.tea.modules.model.response;
 
 import com.alibaba.fastjson.annotation.JSONField;
 import lombok.Data;

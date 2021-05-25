@@ -2,7 +2,7 @@ package com.tea.modules.redis;
 
 import com.google.common.collect.Maps;
 import com.tea.modules.data.redis.util.RedisUtils;
-import com.tea.modules.model.Student;
+import com.tea.modules.model.po.Student;
 import com.tea.modules.util.JacksonUtils;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.Test;

@@ -2,7 +2,7 @@ package com.tea.modules.java8.stream;
 
 import com.alibaba.fastjson.JSON;
 import com.google.common.collect.Lists;
-import com.tea.modules.model.Student;
+import com.tea.modules.model.po.Student;
 
 import java.util.*;
 import java.util.Map;

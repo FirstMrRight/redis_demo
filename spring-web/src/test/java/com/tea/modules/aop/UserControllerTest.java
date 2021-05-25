@@ -2,7 +2,7 @@ package com.tea.modules.aop;
 
 import com.tea.modules.aop.controller.UserController;
 import com.tea.modules.introduction.CustomizeProcessor;
-import com.tea.modules.model.User;
+import com.tea.modules.model.po.User;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.Test;
 import org.junit.runner.RunWith;

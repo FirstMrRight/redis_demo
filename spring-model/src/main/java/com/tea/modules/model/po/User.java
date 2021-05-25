@@ -1,17 +1,16 @@
-package com.tea.modules.model;
+package com.tea.modules.model.po;
 
+import com.tea.modules.model.base.BaseModel;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
-import lombok.NoArgsConstructor;
 
-import java.util.Date;
 import java.util.List;
 
 @Data
 @Builder
 @AllArgsConstructor
-public class User extends BaseModel{
+public class User extends BaseModel {
     private String userName;
     private String password;
     private int age;

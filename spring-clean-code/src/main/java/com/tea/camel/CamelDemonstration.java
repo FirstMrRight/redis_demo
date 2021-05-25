@@ -1,8 +1,7 @@
 package com.tea.camel;
 
-import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
-import com.tea.modules.model.HttpResponse;
+import com.tea.modules.model.response.HttpResponse;
 
 /**
  * com.tea.camel

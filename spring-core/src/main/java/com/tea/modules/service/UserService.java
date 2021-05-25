@@ -1,6 +1,6 @@
 package com.tea.modules.service;
 
-import com.tea.modules.model.User;
+import com.tea.modules.model.po.User;
 
 /**
  * @author jaymin
