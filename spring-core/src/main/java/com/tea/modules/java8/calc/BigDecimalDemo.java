@@ -74,6 +74,11 @@ public class BigDecimalDemo {
     }
 
     public static void main(String[] args) {
+        BigDecimal bigDecimal = new BigDecimal(0.1F);
+        System.out.println(bigDecimal);
+        BigDecimal decimal = BigDecimal.valueOf(0.1);
+        System.out.println(decimal);
+        divideProblem();
         equalProblem();
         compareBigDecimal();
     }
