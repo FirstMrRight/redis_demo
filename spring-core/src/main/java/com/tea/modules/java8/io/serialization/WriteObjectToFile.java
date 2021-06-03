@@ -39,7 +39,7 @@ public class WriteObjectToFile {
         serializable(mary);
     }
 
-    protected static void serializable(Object object) throws IOException {
+    public static void serializable(Object object) throws IOException {
         try (
                 // 创建文件输出流，如果fileName不存在会自动创建
                 // 对象状态序列化.ser文件
