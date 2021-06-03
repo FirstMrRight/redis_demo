@@ -15,7 +15,6 @@ import java.time.LocalDate;
  */
 @Data
 @AllArgsConstructor
-@NoArgsConstructor
 public class Employee {
     /**
      * 名称
@@ -32,10 +31,15 @@ public class Employee {
 
     /**
      * 涨工资
+     *
      * @param byPercent 涨薪幅度,例如: 1.25
      */
     public void raiseSalary(double byPercent) {
         double raise = salary * byPercent / 100;
         salary *= raise;
+    }
+
+    public Employee() {
+        System.out.println("I am parent.");
     }
 }

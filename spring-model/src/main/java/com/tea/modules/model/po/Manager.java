@@ -19,13 +19,16 @@ import java.time.LocalDate;
  * @since 2021/5/25
  */
 @Data
-@NoArgsConstructor
 @ToString(callSuper = true)
 public class Manager extends Employee {
     /**
      * 奖金
      */
     private double bonus;
+
+    public Manager() {
+        System.out.println("I am child");
+    }
 
     public Manager(String name, double salary, LocalDate hireDay, double bonus) {
         super(name, salary, hireDay);

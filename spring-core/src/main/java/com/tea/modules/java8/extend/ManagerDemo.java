@@ -26,5 +26,12 @@ public class ManagerDemo {
         employees.add(jack);
         employees.add(james);
         employees.forEach(System.out::println);
+        for (Employee employee : employees) {
+            if(employee instanceof Manager){
+                Manager managerPerson = (Manager) employee;
+                System.out.println(managerPerson.getSalary());
+            }
+        }
+        Manager testManager = new Manager();
     }
 }
