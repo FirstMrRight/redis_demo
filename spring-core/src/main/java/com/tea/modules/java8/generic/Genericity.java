@@ -45,19 +45,19 @@ public class Genericity {
     /**
      * 泛型的类型参数只能是类类型，不能是简单类型
      *
-     * @param values
      * @param <T>
+     * @param values
      */
-    private static <T> void doSomething(T... values) {
+    private static <T> void printGenericObjects(T... values) {
         for (T value : values) {
-            System.out.println(value);
+            System.out.println(value + "  " + value.getClass());
         }
     }
 
     public static void main(String[] args) {
         Integer[] array = new Integer[]{1, 2, 3};
         int[] arrayB = new int[]{1, 2, 3};
-        doSomething(array);
-        doSomething(arrayB);
+        printGenericObjects(array);
+        printGenericObjects(arrayB);
     }
 }
