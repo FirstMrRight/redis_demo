@@ -11,25 +11,36 @@ import lombok.Getter;
  */
 @Getter
 public enum OperationEnum {
-
+    /**
+     * 加
+     */
     PLUS("+") {
         @Override
         public double apply(double x, double y) {
             return x + y;
         }
     },
+    /**
+     * 减
+     */
     MINUS("-") {
         @Override
         public double apply(double x, double y) {
             return x - y;
         }
     },
+    /**
+     * 乘
+     */
     TIMES("*") {
         @Override
         public double apply(double x, double y) {
             return x * y;
         }
     },
+    /**
+     * 除
+     */
     DIVIDE("/") {
         @Override
         public double apply(double x, double y) {
@@ -37,6 +48,9 @@ public enum OperationEnum {
         }
     };
 
+    /**
+     * 运算符
+     */
     private final String symbol;
 
     OperationEnum(String symbol) {

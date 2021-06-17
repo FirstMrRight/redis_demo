@@ -7,7 +7,7 @@ package com.tea.modules.java8.enums;
  * @author jaymin
  * @since 2021/6/9
  */
-public enum WeekEnum {
+public enum WeekEnum implements EnumInfoService{
     /**
      * 周一
      */
@@ -36,4 +36,9 @@ public enum WeekEnum {
      * 周日
      */
     SUN;
+
+    @Override
+    public void printName() {
+        System.out.println(this.name());
+    }
 }

@@ -65,9 +65,19 @@ public class EnumDemo {
             System.out.printf("%f %s %f = %f%n",x,operation.getSymbol(),y, apply);
         }
     }
+
+    /**
+     * 枚举与接口
+     */
+    private static void printEnumInfo(){
+        EnumInfoService web = WeekEnum.WEB;
+        web.printName();
+    }
+
     public static void main(String[] args) {
 //        enumFunction();
 //        printWorkDays(WeekEnum.MON);
-        doOperation();
+//        doOperation();
+        printEnumInfo();
     }
 }
