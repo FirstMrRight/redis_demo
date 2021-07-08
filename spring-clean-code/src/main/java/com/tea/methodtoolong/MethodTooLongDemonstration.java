@@ -41,6 +41,44 @@ public class MethodTooLongDemonstration {
         exchangeCodeSortList.add("HK");
     }
 
+    public ExchangeResponse getExchangeInfoOfTooLong(String exchangeCode) {
+        if (StringUtils.isEmpty(exchangeCode)) {
+            return new ExchangeResponse();
+        }
+        Object cacheResult = redisTemplate.opsForValue().get(exchangeCode);
+        if (Objects.nonNull(cacheResult)) {
+            String jsonString = JSON.toJSONString(cacheResult);
+            ExchangeResponse exchangeResponse = JSONObject.parseObject(jsonString, ExchangeResponse.class);
+            return exchangeResponse;
+        }
+        ExchangeInfoRequest exchangeInfoRequest = new ExchangeInfoRequest();
+        exchangeInfoRequest.setExchangeCode(exchangeCode);
+        exchangeInfoRequest.setUpdateTime(new Date());
+        ExchangeResponse exchangeResponse = null;
+        long startTime = System.currentTimeMillis();
+        log.info("request api :[{}],params:{}", URL, JSON.toJSONString(exchangeInfoRequest));
+        try {
+            exchangeResponse = restTemplate.getForObject(URL, ExchangeResponse.class, exchangeInfoRequest);
+            long endTime = System.currentTimeMillis();
+            log.info("request api :[{}] uses {} ms", URL, endTime - startTime);
+        } catch (RestClientException e) {
+            throw new RestfulException("调用:[" + URL + "]api出错,错误原因:" + e);
+        }
+        if (Objects.isNull(exchangeResponse)) {
+            return new ExchangeResponse();
+        }
+        Map<String, Object> resultMap = new TreeMap();
+        for (Map.Entry<String, Object> conversionRate : exchangeResponse.getConversionRates().entrySet()) {
+            String currentExchangeCode = conversionRate.getKey();
+            Object currentExchange = conversionRate.getValue();
+            int index = exchangeCodeSortList.indexOf(currentExchangeCode);
+            resultMap.put(Integer.valueOf(index).toString(), currentExchange);
+        }
+        exchangeResponse.setConversionRates(resultMap);
+        redisTemplate.opsForValue().set("exchange:cache", JSON.toJSONString(exchangeResponse), 30, TimeUnit.MINUTES);
+        return exchangeResponse;
+    }
+
     public ExchangeResponse getExchangeInfo(String exchangeCode) {
         if (StringUtils.isEmpty(exchangeCode)) {
             return new ExchangeResponse();

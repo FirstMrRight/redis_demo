@@ -16,9 +16,36 @@ public class Polymorphism {
         applyCreditCard(new PFBank());
         applyCreditCard(new ChineseBank());
         applyCreditCard(new ZSBank());
+        new RoundGlyph(5);
     }
 
     private static void applyCreditCard(IBank bank){
         bank.applyCreditCard();
+    }
+
+    static class Glyph {
+        void draw() {
+            System.out.println("Glyph.draw()");
+        }
+
+        Glyph() {
+            System.out.println("Glyph() before draw()");
+            draw();
+            System.out.println("Glyph() after draw()");
+        }
+    }
+
+    static class RoundGlyph extends Glyph {
+        private int radius = 1;
+
+        RoundGlyph(int r) {
+            radius = r;
+            System.out.println("RoundGlyph.RoundGlyph(), radius = " + radius);
+        }
+
+        @Override
+        void draw() {
+            System.out.println("RoundGlyph.draw(), radius = " + radius);
+        }
     }
 }
