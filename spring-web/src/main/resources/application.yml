@@ -1,4 +1,4 @@
-tea.server.host: 192.168.13.172
+tea.server.host: 10.20.16.232
 spring:
   profiles:
     active: dev
@@ -50,3 +50,9 @@ logging:
 #    ##驼峰下划线之间的转换
 #    map-underscore-to-camel-case: true
 #    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+
+com:
+  tea:
+    path:
+      monitor: C:\Users\jaymin\Desktop\Jaymin\电子书
+      push: C:\Users\jaymin\Desktop\monitor

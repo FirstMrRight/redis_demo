@@ -2,6 +2,9 @@ package com.tea.modules.java8.io.files;
 
 import org.apache.commons.io.monitor.FileAlterationListenerAdaptor;
 import org.apache.commons.io.monitor.FileAlterationObserver;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.ApplicationEventPublisher;
 import org.springframework.stereotype.Component;
 
 import java.io.File;
@@ -14,6 +17,10 @@ import java.io.File;
  */
 @Component
 public class ApacheMonitor extends FileAlterationListenerAdaptor {
+
+    @Autowired
+    private ApplicationEventPublisher applicationEventPublisher;
+
     @Override
     public void onStart(FileAlterationObserver observer) {
         System.out.println("---monitor start---");
@@ -37,6 +44,7 @@ public class ApacheMonitor extends FileAlterationListenerAdaptor {
     @Override
     public void onFileCreate(File file) {
         System.out.println("创建文件" + file);
+        applicationEventPublisher.publishEvent(new FileModifyEvent(file));
     }
 
     @Override
