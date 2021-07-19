@@ -35,7 +35,6 @@ public class EncryptFileListener implements ApplicationListener<FileModifyEvent>
         log.info("监控到文件事件,文件名:" + name);
         String encryptPath = pushPath + File.separator + name;
         AESUtil.encryptFile(event.getModifyFile(), new File(encryptPath), publicKey);
-        int lastIndexOf = name.lastIndexOf(".");
         AESUtil.decryptFile(new File(encryptPath), "解密", publicKey);
     }
 

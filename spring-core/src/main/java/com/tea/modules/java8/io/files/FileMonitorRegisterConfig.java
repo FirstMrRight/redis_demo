@@ -13,7 +13,7 @@ import java.io.File;
  * @author jaymin
  * @since 2021/7/9
  */
-@Component
+//@Component
 public class FileMonitorRegisterConfig {
 
 

@@ -56,3 +56,5 @@ com:
     path:
       monitor: C:\Users\jaymin\Desktop\Jaymin\电子书
       push: C:\Users\jaymin\Desktop\monitor
+    task:
+      encrypt: 0 0/1 * * * ?
